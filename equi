@@ -1,0 +1,27 @@
+let arr=[
+  [0,1,0],
+  [0,0,0],
+  [0,1,0]
+];
+let m=[];
+let s=[];
+let n=arr.length;
+for(let i=0;i<n;i++){
+  m.push(0);
+  s.push(0);
+}
+for(let i=0;i<n;i++){
+  for(let j=0;j<n;j++){
+    if(arr[i][j]==1){
+      m[j]++;
+      s[i]++;
+    }
+  }
+}
+let flag="";
+for(let i=0;i<n;i++){
+  if(m[i]==n-1 && s[i]==0){
+    flag=i
+  }
+}
+console.log(flag==""?-1:flag)
