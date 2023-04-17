@@ -2,7 +2,8 @@ let arr=[
   [0,1,0],
   [0,0,0],
   [0,1,0]
-];
+]; 
+//declaring a hasjh array
 let m=[];
 let s=[];
 let n=arr.length;
@@ -18,6 +19,7 @@ for(let i=0;i<n;i++){
     }
   }
 }
+//checking now:-
 let flag="";
 for(let i=0;i<n;i++){
   if(m[i]==n-1 && s[i]==0){
